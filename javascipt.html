@@ -1,0 +1,88 @@
+<!DOCTYPE HTML SYSTEM>
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<title>portfolio</title>
+		<link href="\\brsd-jb-fs01\2018$\18Badshahu\webPortfolioFinal_usama\style.css" rel="stylesheet">
+		<link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+		<link rel="shortcut icon" type="image/png" href="\\brsd-jb-fs01\2018$\18Badshahu\html\untitled-1.png"/>
+		<script>
+		 function updateTime() { 
+
+				// get all parts of the current time
+			var now = new Date();
+			var hours = now.getHours();
+			var minutes = now.getMinutes();
+			var seconds = now.getSeconds();
+			
+			// splice them together into a character string named "currentTime"
+			var currentTime = hours + ':' + minutes + ':' + seconds + '  ' + timeOfDay;
+			
+			// get the clock div 
+			var myClock = document.getElementById('clock');
+			
+			// write the currentTime string to the clock div
+			myClock.innerHTML = currentTime;
+			  // add leading zero's to minutes and seconds
+			if (minutes < 10) { 
+			minutes = '0' + minutes;
+			}
+			if (seconds < 10) { 
+			seconds = '0' + seconds;
+			}				
+			
+			// get time of day (am or pm) 
+			if (hours >= 12 && hours < 24) { 
+			var timeOfDay = 'pm';
+			}
+			else { 
+			var timeOfDay = 'am'; 
+			}
+							
+			// convert hours from 24-hour time to 12-hour time
+			if (hours > 12) { 
+			hours = hours - 12;
+		}
+  }
+	function toggleClock() { 
+			// get the clock 
+			var myClock = document.getElementById('clock');
+			
+			// get the current value of the clock's display property 
+			var displaySetting = myClock.style.display;
+			
+			// also get the clock button, so we can change what it says 
+			var clockButton = document.getElementById('clockButton');
+						
+			// now toggle the clock and the button text, depending on current state
+			if (displaySetting == 'block') { 
+				// clock is visible. hide it
+				myClock.style.display = 'none';
+				// change button text
+				clockButton.innerHTML = 'Show clock';
+			}
+			else { 
+				// clock is hidden. show it 
+				myClock.style.display = 'block';
+				// change button text
+				clockButton.innerHTML = 'Hide clock';
+    }
+  }  
+		</script>
+	</head>
+	<body class="hat" onload="setInterval('updateTime()',1000)">
+		<ol>
+					<li><a  href="\\brsd-jb-fs01\2018$\18Badshahu\webPortfolioFinal_usama\index.html">Home</a></li>
+					<li><a href="\\brsd-jb-fs01\2018$\18Badshahu\webPortfolioFinal_usama\accessability.html">accesability</a></li>
+					<li><a href="\\brsd-jb-fs01\2018$\18Badshahu\html\page2.html">graphics</a></li>
+					<li><a href="\\brsd-jb-fs01/2018$/18Badshahu/webPortfolioFinal_usama/usability.html">usability</a></li>
+					<li><a class="active" href="\\brsd-jb-fs01\2018$\18Badshahu\webPortfolioFinal_usama\javascipt.html">javascipt</a></li>
+		</ol>
+		<div class="clock"></div>
+		<div class="h">
+		<h1>enjoy :)</h1>
+			<iframe width="420" height="315"
+				src="https://www.youtube.com/embed/tgbNymZ7vqY">
+			</iframe>
+		</div>
+	</body>
