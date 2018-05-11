@@ -10,6 +10,12 @@
 		['', '-ms-', '-webkit-', '-o-', '-moz-'].map(function(prefix){
 	document.body.style[prefix + 'transform'] = 'rotate(180deg)';
 });}
+		function nuh() {
+		['', '-ms-', '-webkit-', '-o-', '-moz-'].map(function(prefix){
+	Array.prototype.slice.call(document.querySelectorAll('div,p,span,img,a,body')).map(function(el){
+		el.style[prefix + 'transform'] = 'rotate(' + (Math.floor(Math.random() * 3) - 1) + 'deg)';
+	});
+});}
 	</head>
 
 	<body>
@@ -44,8 +50,8 @@ Graphics are used for everything from enhancing the appearance of Web pages to s
 				<img src="https://images.pexels.com/photos/178837/pexels-photo-178837.jpeg?w=940&h=650&auto=compress&cs=tinysrgb">
 				<h6>"the red sea with winegber in background -2016'"</h6>
 				<h2>here are some buttons</h2>
-				<a href=https://www.google.com/> <img src="\\brsd-jb-fs01\2018$\18Badshahu\html\ijoj.png" /></a>
-				<input id="clickMe" type="button" value=dont click this" onclick="yuh();" />
+				<input id="clickMe" type="button" value=dont click this" onclick="nuh();" />
+				<input id="clickMe" type="button" value=def dont click this" onclick="yuh();" />
 				<marquee>photos courtosy of john wilkmam</marquee>  
 			</div>
 		<hr/>
