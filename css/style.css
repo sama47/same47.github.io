@@ -10,7 +10,7 @@ h1 {
 	position: sticky;
 	top: 0;
 	background-image: url("https://freestocks.org/fs/wp-content/uploads/2016/08/blurry_sunset-800x533.jpg");
-	background-size: cover; /* or contain depending on what you want */
+	background-size: cover; 
 	background-position: center center;
 	background-repeat: no-repeat;
 	text-align: center;
@@ -74,7 +74,7 @@ p {
     margin: 0;
     padding: 0;
     overflow: hidden;
-	background-color: rgba(141, 252, 157, 0.65);
+	background-color: :#b8acb6;
 }
 .wrapper li {
     float: initial ;
@@ -147,7 +147,7 @@ li a:hover:not(.active) {
 }
 
 .active {
-    background-color: rgba(141, 252, 157, 0.90);
+    background-color: #b5b3b4;
 }
 .clock {
 	margin-bottom: -28px;
